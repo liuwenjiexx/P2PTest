@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "P2PTest": {
-      "commandName": "Project",
-      "commandLineArgs": "-remote-address 127.0.0.1\r\n-port 7778"
-    }
-  }
-}
