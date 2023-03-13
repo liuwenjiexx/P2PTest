@@ -25,7 +25,7 @@ args2.Get("-remote-port", ref remotePort);
 args2.Get("-remote-address", ref remoteAddress);
 
 object lockObj = new();
-
+WriteLine(remoteAddress + ", " + remotePort);
 IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse(remoteAddress), remotePort);
 IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Any, port);
 var udpClient = new UdpClient(localEndPoint);
